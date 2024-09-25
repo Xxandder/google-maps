@@ -1,0 +1,229 @@
+.hero-section_optimization .hero-section__title{
+    max-width: 485px;
+}
+
+.hero-section_optimization .hero-section__text{
+    max-width: 415px;
+}
+
+.settings{
+    padding: 70px 0 121px;
+    color: var(--text-color-dark)
+}
+
+.settings__container{
+
+}
+
+.settings__heading{
+    text-align: left;
+    max-width: 984px;
+}
+
+.settings__text{
+    margin-top: 40px;
+    font-size: 18px;
+    line-height: 1.2;
+}
+
+.settings__items{
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: repeat(10, 1fr); 
+    gap: 0;
+    row-gap: 32px;
+    /* column-gap: 30px; */
+}
+
+.settings__item{
+    font-size: 18px;
+    font-weight: 300;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+    text-align: left;
+}
+
+.settings__item:nth-child(odd){
+    padding-right: 30px;
+}
+
+.settings__item img{
+    width: 20px;
+}
+
+@media(max-width: 967px){
+    .settings{
+        padding: 70px 0;
+    }
+}
+
+@media(max-width: 768px){
+    .settings{
+        padding: 50px 0;
+    }
+    .settings__text{
+        margin-top: 30px;
+    }
+    .settings__items{
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media(max-width: 480px){
+    .settings{
+        padding: 30px 0;
+    }
+    .settings__text{
+        font-size: 16px;
+        margin-top: 20px;
+    }
+    .settings__items{
+        margin-top: 20px;
+        gap: 15px;
+    }
+    .settings__item{
+        gap: 10px
+    }
+    .settings__item img{
+        width: 15px;
+    }
+    .hero-section_optimization .hero-section__button{
+        font-size: 4.35vw;
+        padding-left: 5.12vw;
+    }
+}
+
+/* WORK ADVANTAGES BLOCK*/
+
+.work-advantages{
+    padding: 70px 30px;
+    color: var(--text-color-dark);
+}   
+
+.work-advantages__wrapper{
+    background-color: #FAFAFA;
+    border-radius: 50px;
+    padding: 60px 30px;
+}
+
+.work-advantages__container{
+    padding: 0;
+}
+
+.work-advantages__heding{
+    text-align: left;
+}
+
+.work-advantages__content{
+    padding-top: 50px;
+}
+
+.work-advantages__items{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, auto);
+    row-gap: 30px;
+    
+}
+
+.work-advantages__item{
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.2;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    /* padding-right: 40px; */
+}
+
+.work-advantages__name{
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.work-advantages__item:nth-child(odd){
+    padding-right: 30px;
+}
+
+.work-advantages__item:nth-child(even){
+    color: var(--color-green);
+}
+
+.work-advantages__item:nth-child(3) p{
+    max-width: 353px;
+}
+.work-advantages__item:nth-child(4) p{
+    max-width: 495px;
+}
+.work-advantages__item:nth-child(5) p{
+    max-width: 300px;
+}
+.work-advantages__item:nth-child(6) p{
+    max-width: 433px;
+}
+.work-advantages__item:nth-child(7) p{
+    max-width: 405px;
+}
+.work-advantages__item:nth-child(8) p{
+    max-width: 483px;
+}
+.work-advantages__item:nth-child(9) p{
+    max-width: 415px;
+}
+.work-advantages__item:nth-child(10) p{
+    max-width: 389px;
+}
+.work-advantages__item:nth-child(11) p{
+    max-width: 395px;
+}
+.work-advantages__item:nth-child(12) p{
+    max-width: 457px;
+}
+
+@media(max-width: 768px){
+    .work-advantages__items{
+        display: flex;
+        flex-direction: column;
+    }
+    .work-advantages__item:nth-child(odd){
+        order: -1;
+    }
+
+}
+
+@media(max-width: 480px){
+    .work-advantages__wrapper{
+        padding: 0;
+        background-color: transparent;
+    }
+    .work-advantages{
+        padding: 30px 20px;
+    }
+    .work-advantages__content{
+        padding-top: 20px;
+    }
+    .work-advantages__items{
+        gap: 15px;
+        
+    }
+    .work-advantages__item{
+        font-size: 14px;
+        gap: 15px
+    }
+    .work-advantages__item img{
+        width: 20px;
+    }
+    .work-advantages__item:nth-child(2){
+        margin-top: 25px;
+    }
+    .work-advantages__item:nth-child(3),  .work-advantages__item:nth-child(4){
+        margin-top: 5px;
+    }
+    
+}
+

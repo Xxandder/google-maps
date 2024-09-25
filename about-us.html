@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="styles/fonts.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <script
+  src="https://code.jquery.com/jquery-3.7.1.js"
+  integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+  crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+        />
+    <title>PROMAP</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="burger__container">
+            <div class="burger__menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="burger__overlay"></div>
+            <nav class="burger__side-menu">
+                <div class="burger__logo">
+                    <img src="./images/common/logo-white.svg" alt="">
+                </div>
+                <div class="burger__links">
+                    <div class="burger__submenu">
+                        <span>Послуги</span>
+                        <ul>
+                            <li><a href="#">Розміщення</a></li>
+                            <li><a href="#">Просування</a></li>
+                            <li><a href="#">Оптимізація</a></li>
+                            <li><a href="#">Створення сайту</a></li>
+                        </ul>
+                    </div>
+                    <div class="burger__submenu">
+                        <span>Про компанію</span>
+                        <ul>
+                            <li><a href="#">Про нас</a></li>
+                            <li><a href="#">Відгуки</a></li>
+                            <li><a href="#">Кейси</a></li>
+                            <li><a href="#">Контакти</a></li>
+                            <li><a href="#">Партнерська програма</a></li>
+                        </ul>
+                    </div>
+                    <div class="burger__submenu">
+                        <span>FAQ</span>
+                       
+                    </div>
+                </div>
+                <div class="burger__contacts">
+                    <p>Зв’затись з нами</p>
+                    <div class="burger__contacts-list contacts__list">
+                        <a href="" class="burger__contact contact__item">
+                            <img src="./images/common/contact-tg.svg" alt="">
+                        </a>
+                        <a href="" class="burger__contact contact__item">
+                            <img src="./images/common/contact-ws.svg" alt="">
+                        </a>
+                        <a href="" class="burger__contact contact__item">
+                            <img src="./images/common/contact-viber.svg" alt="">
+                        </a>
+                        <a href="" class="burger__contact contact__item">
+                            <img src="./images/common/contact-instagram.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <button class="button burger__button open-form">
+                    Залишити заявку
+                </button>
+
+                
+            </nav>
+        </div>
+        
+        <div class="header">
+            <div class="header__container _container">
+                <a href="./index.html">
+                    <div class="header__logo logo _ibg">
+                        <img src="./images/common/logo.svg" alt="logo">
+                    </div>
+                </a>
+              
+                <nav class="header__menu">
+                    <ul class="header__menu-list">
+                        <li class="header__menu-item">
+                            <span>Послуги <img src="./images/common/header-menu__icon.svg" alt="" class="header__menu-icon"></span>
+                            <div class="submenu__wrapper">
+                                <ul class="submenu">
+                                    <div class="submenu__hill">
+                                        <img src="./images/common/submenu-hill.svg" alt="">
+                                    </div>
+                                    <li class="submenu__item">
+                                        <a href="./profile-service.html">Розміщення</a>
+                                    </li>
+                                    <li class="submenu__item">
+                                        <a href="./optimization-service.html">Оптимізація</a>
+                                    </li>
+                                    <li class="submenu__item">
+                                        <a href="./audit-service.html">Аудит</a>
+                                    </li>
+                                    <li class="submenu__item">
+                                        <a href="./promotion-service.html">Просування</a>
+                                    </li>
+                                    <li class="submenu__item">
+                                        <a href="">Створення&nbspсайту</a>
+                                    </li>
+                                </ul>
+                            </div>
+                         
+                        </li>
+                        <li class="header__menu-item">
+                            <span>Про компанію <img src="./images/common/header-menu__icon.svg" alt="" class="header__menu-icon"></span>
+                            <div class="submenu__wrapper">
+                                <ul class="submenu">
+                                    <div class="submenu__hill">
+                                        <img src="./images/common/submenu-hill.svg" alt="">
+                                    </div>
+                                    <li class="submenu__item">
+                                        <a href="./about-us.html">Про нас</a>
+                                    </li>
+                                    <li class="submenu__item">
+                                        <a href="./reviews.html">Відгуки</a>
+                                    </li>
+                                    <li class="submenu__item">
+                                        <a href="./cases.html">Кейси</a>
+                                    </li>
+                                    <li class="submenu__item">
+                                        <a href="./contacts.html">Контакти</a>
+                                    </li>
+                                    <li class="submenu__item">
+                                        <a href="./referal.html">Партнерська
+                                            програма</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="header__menu-item">
+                            <a href="./faq.html">FAQ</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header__contacts">
+                    <a class="header__contact" href="https://t.me/naguirna" target="_blank">
+                        <!-- <a href=""></a> -->
+                        <div class="button button-blue header__contact-button">
+                            <div class="button__icon">
+                                <img src="./images/common/tg-icon-blue.svg" alt="">
+                            </div>
+                            <span class="button__text">
+                                Написати в Телеграм
+                            </span>
+                        </div>
+                         <div class="button button-blue header__contact-button header__contact-button-m">
+                            <div class="button__icon">
+                                <img src="./images/common/tg-icon-white.svg" alt="">
+                            </div>
+                        </div>
+                    </a>
+                    <a class="header__contact" href="tel:+380997032183">
+                        <div class="button button-green header__contact-button">
+                            <div class="button__icon">
+                                <img src="./images/common/phone-icon-green.svg" alt="">
+                            </div>
+                            <span class="button__text">
+                                Зателефонувати
+                            </span>
+                        </div>
+                          <div class="button button-green header__contact-button header__contact-button-m">
+                            <div class="button__icon">
+                                <img src="./images/common/phone-icon-white.svg" alt="">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+           
+            <div class="about-us">
+                <div class="about-us__container _container">
+                    <h2 class="heading about-us__heading">
+                        Про <span>нас</span>
+                    </h2>
+                    <div class="about-us__content">
+                        <div class="about-us__image-wrapper">
+                            <div class="about-us__image _ibg">
+                                <img src="./images/main-page/about-us-photo.jpg" alt="">
+                            </div>
+                        </div>
+                       
+                        <div class="about-us__text">
+                            <div class="about-us__quotes">
+                                <img src="./images/main-page/quotes-icon.svg" alt="">
+                            </div>
+                            
+                            <div class="about-us__desc">
+                                <p>
+                                    PROMAP - українська інноваційна компанія
+                                    з&nbspрозвитку локального бізнесу на Google Картах.
+                                    <br> <br>
+                                </p>
+                                   
+                                <p>
+                                    Ми допомагаємо залучити нових клієнтів і&nbspпідвищити
+                                     конкурентоспроможність бізнесу.
+                                     <br> <br>
+                                </p>
+
+                                <p>
+                                    Для нас важливий результат, а не процес. Ми дуже чітко
+                                усвідомлюємо і розуміємо, що наша взаємодія швидко
+                                закінчиться, якщо ми не приносимо користь вашому бізнесу.
+                                </p>
+                            </div>
+                            <div class="about-us__founder">
+                                <span>– Поліна Романенко,</span> засновниця та власниця компанії PROMAP
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="advantages">
+                <div class="advantages__container _container">
+                    <div class="heading advantages__heading">
+                        Наші <span>переваги</span>
+                    </div>
+                    <div class="advantages__items">
+                        <div class="advantages__item">
+                            <div class="advantages__image _ibg">
+                                <img src="./images/main-page/advantages-1.jpg" alt="">
+                            </div>
+                            <div class="advantages__title">
+                                Інноваційний підхід
+                            </div>
+                            <div class="advantages__text">
+                                Ми тестуємо та в﻿проваджуємо
+                                новітні методики локального SEO
+                                та використовуємо аналітичні інструменти
+                                для максимізації результатів
+                            </div>
+                        </div>
+                        <div class="advantages__item">
+                            <div class="advantages__image _ibg">
+                                <img src="./images/main-page/advantages-2.jpg" alt="">
+                            </div>
+                            <div class="advantages__title">
+                                Професійна робота
+                            </div>
+                            <div class="advantages__text">
+                                Ми працюємо чесно, відкрито
+                                і без проблем. Глибоко занурюємося
+                                у ваш бізнес і беремося до роботи в день
+                                звернення, дотримуючись термінів
+                                і виконуючи всі домовленості
+                            </div>
+                        </div>
+                        <div class="advantages__item">
+                            <div class="advantages__image _ibg">
+                                <img src="./images/main-page/advantages-3.jpg" alt="">
+                            </div>
+                            <div class="advantages__title">
+                                Вирішуємо ваші проблеми
+                            </div>
+                            <div class="advantages__text">
+                                Ваші завдання для нас на першому місці.
+                                Ми знаємо, що ваша мета - отримання
+                                прибутку від нашої співпраці. Тому наша
+                                головна мета - допомогти вашому бізнесу
+                                заробити більше грошей
+                            </div>
+                        </div>
+                        <div class="advantages__item">
+                            <div class="advantages__image _ibg">
+                                <img src="./images/main-page/advantages-4.jpg" alt="">
+                            </div>
+                            <div class="advantages__title">
+                                Детальна звітність
+                            </div>
+                            <div class="advantages__text">
+                                Щомісяця надаємо детальну статистику
+                                за всіма ключовими показниками в динаміці
+                                до попереднього звітного періоду,
+                                супроводжуючи наочними графіками,
+                                і описуємо всі виконані роботи за проєктом
+                            </div>
+                        </div>
+                        <div class="advantages__item">
+                            <div class="advantages__image _ibg">
+                                <img src="./images/main-page/advantages-5.jpg" alt="">
+                            </div>
+                            <div class="advantages__title">
+                                Безпека
+                            </div>
+                            <div class="advantages__text">
+                                Дбайлива робота з вашим профілем
+                                без ризику блокування. Не розголошуємо
+                                дані третім особам без вашого дозволу
+                                
+                            </div>
+                        </div>
+                        <div class="advantages__item">
+                            <div class="advantages__image _ibg">
+                                <img src="./images/main-page/advantages-6.jpg" alt="">
+                            </div>
+                            <div class="advantages__title">
+                                Завжди на зв'язку
+                            </div>
+                            <div class="advantages__text">
+                                Ніколи не зникаємо.<br>
+                                Ми на зв'язку практично 24/7 в онлайн
+                                і завжди готові оперативно відповісти
+                                на ваші запитання
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+        <div class="consultation">
+            <div class="consultation__container _container">
+                <div class="consultation__content">
+                    <div class="consultation__title">
+                        Потрібна консультація?
+                    </div>
+                    <div class="consultation__text">
+                        Залиште заявку і ми розкажемо, як ваш бізнес
+                        може залучати клієнтів через карти
+                    </div>
+                    <button class="button consultation__button open-form">
+                        <span>залиште заявку</span>
+                        <div class="button__icon">
+                            <img src="./images/common/top-right-arrow.svg" alt="">
+                        </div>
+                    </button>
+                </div>
+                <div class="consultation__image">
+                    <img src="./images/common/consultation-photo.png" alt="">
+                    <img src="./images/common/consultation-photo-m.png" class="mobile" alt="">
+                    <div class="consultation__question-mark consultation__question-mark-1">
+                        ?
+                    </div>
+                    <div class="consultation__question-mark consultation__question-mark-2">
+                        ?
+                    </div>
+                    <div class="consultation__question-mark consultation__question-mark-3">
+                        ?
+                    </div>
+                </div>
+            </div>
+         
+        </div>
+        <div class="footer">
+            <div class="footer__container _container">
+                <div class="footer__logo">
+                    <img src="./images/common/logo-white.svg" alt="">
+                </div>
+                <div class="footer__menu">
+                    <div class="footer__menu-item">
+                        <div class="footer__menu-title">
+                            Послуги
+                        </div>
+                        <div class="footer__menu-links">
+                            <a class="footer__menu-link" href="./promotion-service.html">
+                                Просування
+                            </a>
+                            <a class="footer__menu-link" href="./profile-service.html">
+                                Розміщення
+                            </a>
+                            <a class="footer__menu-link" href="./optimization-service.html">
+                                Оптимізація
+                            </a>
+                            <a class="footer__menu-link" href="./audit-service.html">
+                                Аудит
+                            </a>
+                            <a class="footer__menu-link">
+                                Створення сайту
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer__menu-item">
+                        <div class="footer__menu-title">
+                            Портфоліо
+                        </div>
+                        <div class="footer__menu-links">
+                            <a class="footer__menu-link" href="./cases.html">
+                                Кейси
+                            </a>
+                            <a class="footer__menu-link" href="./reviews.html">
+                                Відгуки
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer__menu-item">
+                        <div class="footer__menu-title">
+                            Про нас
+                        </div>
+                        <div class="footer__menu-links">
+                            <a class="footer__menu-link" href="./about-us.html">
+                                Про компанію
+                            </a>
+                            <a class="footer__menu-link" href="./about-us.html">
+                                Наші переваги
+                            </a>
+                            <a class="footer__menu-link" href="./referal.html">
+                                Для партнерів
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__contacts">
+                    <div class="footer__contacts-title">
+                        Де нас знайти
+                    </div>
+                    <div class="footer__contacts-list contacts__list">
+                        <a href="https://t.me/naguirna" target="_blank" class="footer__contact contact__item">
+                            <img src="./images/common/contact-tg.svg" alt="">
+                            <img src="./images/common/contact-tg-hover.svg" alt="">
+                        </a>
+                        <a href="https://wa.me/380997032183" target="_blank" class="footer__contact">
+                            <img src="./images/common/contact-ws.svg" alt="">
+                            <img src="./images/common/contact-whatsup-hover.svg" alt="">
+                        </a>
+                        <a href="viber://chat?number=380997032183" target="_blank" class="footer__contact">
+                            <img src="./images/common/contact-viber.svg" alt="">
+                            <img src="./images/common/contact-viber-hover.svg" alt="">
+                        </a>
+                        <a href="https://www.instagram.com/pro.map_" target="_blank" class="footer__contact">
+                            <img src="./images/common/contact-instagram.svg" alt="">
+                            <img src="./images/common/contact-instagram-hover.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <a class="footer__politics">
+                    Політика конфіденційності
+                </a>
+            </div>
+            
+        </div>
+    </div>
+
+    
+    <div id="formModal" class="modal">
+        <div class="modal__content">
+            <div class="modal__image">
+                <img src="/images/common/modal-image.jpg" alt="">
+            </div>
+            <h2 class="heading modal__heading">
+                Залиште заявку і з вами
+                <span>зв’яжеться наш спеціаліст</span>
+            </h2>
+            <!-- <span id="closeFormModal" class="close">&times;</span> -->
+            <form id="formModalForm">
+                <div class="form-group">
+                    <label for="name">Ваше Ім’я</label>
+                    <input type="text" id="name" name="name" 
+                    placeholder="Введіть ваше ім’я" required>
+                  </div>
+                
+                  <!-- Поле с радиокнопками -->
+                  <div class="form-group radio-service">
+                    <p>Що вас цікавить?</p>
+                    <label class="custom-radio">
+                      <input type="radio" name="service" value="Розміщення на картах">
+                      <span class="radio-btn"></span>
+                      Розміщення на картах
+                    </label>
+                    <label class="custom-radio">
+                      <input type="radio" name="service" value="Оптимізація профілю">
+                      <span class="radio-btn"></span>
+                      Оптимізація профілю
+                    </label>
+                    <label class="custom-radio">
+                        <input type="radio" name="service" value=" Обслуговування профілю">
+                        <span class="radio-btn"></span>
+                        Обслуговування профілю
+                    </label>
+                    <label class="custom-radio">
+                        <input type="radio" name="service" value="Аудит профілю ">
+                        <span class="radio-btn"></span>
+                        Аудит профілю 
+                    </label>
+                    <label class="custom-radio">
+                        <input type="radio" name="service" value="Створення сайту">
+                        <span class="radio-btn"></span>
+                        Створення сайту
+                    </label>
+                  </div>
+    
+                  <div class="form-group">
+                    <p>Зручний спосіб зв’язку</p>
+                    <label class="custom-radio">
+                      <input type="radio" name="contact" required value="Телеграм" required>
+                      <span class="radio-btn"></span>
+                      Телеграм
+                    </label>
+                    <label class="custom-radio">
+                      <input type="radio" name="contact" value="Вайбер">
+                      <span class="radio-btn"></span>
+                      Вайбер
+                    </label>
+                    <label class="custom-radio">
+                        <input type="radio" name="contact" value="Телефон">
+                        <span class="radio-btn"></span>
+                        Телефон
+                      </label>
+                  </div>
+                
+                  <div class="form-group">
+                    <label for="phone" class="phone-label">Ваш номер телефону</label>
+                    <input type="text" id="phone-input" name="phone"  required>
+                  </div>
+                  <div class="personal-checkbox">
+                    <input type="checkbox" id="personal-checkbox" name="personal-checkbox" required>
+                    <label for="personal-checkbox" class="personal-checkbox-label">
+                      <span class="personal-checkbox-icon"><img src="/images/common/checkbox-icon.svg" alt="icon" /></span> <!-- Здесь может быть любая иконка -->
+                      <p>Я даю свою <a href=""> згоду </a> на обробку моїх персональних даних</p>
+                    </label>
+                  </div>
+                  <button type="submit" class="button form__button">ЗАЛИШИТИ ЗАЯВКУ</button>
+            </form>
+            <a href="" class="form__politics">
+                Політика конфіденційності
+            </a>
+        </div>
+        </div>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/jquery.inputmask.bundle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="scripts/index.js"></script>
+</body>
+</html>

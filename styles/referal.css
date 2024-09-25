@@ -1,0 +1,236 @@
+
+/* REFERAL */
+
+.referal{
+    padding: 70px 0;
+    color: var(--text-color-dark)
+}
+
+.referal__container{
+
+}
+
+.referal__circle{
+    position: relative;
+    width: 56%;
+    aspect-ratio: 1 / 1;
+    /* min-height: 100%; */
+    border: 1px solid black;
+    border-radius: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    /* font-size: 5%; */
+    font-size: 24px;
+}
+
+.referal__heading{
+    max-width: 268px;
+    /* font-size: calc(10% * 10); */
+}
+
+.referal__circle p{
+    max-width: 268px;
+    margin-top: 20px;
+    
+}
+
+.referal__items{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.referal__item{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.referal__item:nth-child(1){
+    top: 299px;
+    left: -200px;
+    align-items: flex-end;
+}
+.referal__item:nth-child(2){
+    top: 550px;
+    left: 50px;
+}
+.referal__item:nth-child(3){
+    top: 550px;
+    right: 50px;
+}
+.referal__item:nth-child(4){
+    top: 299px;
+    right: -160px;
+}
+
+/* .referal__item:nth-child(4) .referal__item-name{
+   text-align: center;
+} */
+.referal__item .referal__item-description{
+    /* text-align: center; */
+    max-width: 235px;
+}
+
+.referal__icon{
+    width: 150px;
+    height: 150px;
+}
+
+.referal__icon img{
+    max-width: 100%;
+}
+
+.referal__item-name{
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.referal__item-description{
+    font-size: 18px;
+    line-height: 110%;
+    text-align: center;
+}
+
+.referal__text{
+    font-size: 18px;
+    font-style: italic;
+    line-height: 1.1;
+    margin-top: 234px;
+    text-align: center;
+    padding: 0 45px;
+}
+
+.referal__button{
+    width: fit-content;
+    margin: 50px auto 0;
+    padding: 6px 10px 6px 30px;
+    border-radius: 70px;
+    background: linear-gradient(0deg, #00954D 0%, #00A656 100%), #D9D9D9;
+}
+
+.referal__button .button__icon{
+    width: 46px;
+    height: 46px;
+}
+
+.referal__items_m{
+    display: none;
+}
+
+
+@media(max-width: 1220px){
+    .referal__circle{
+        font-size: 1.97vw;
+    }
+    .referal__heading{
+        max-width: 21.96vw;
+        font-size: 3.94vw;
+    }
+    
+    .referal__circle p{
+        max-width: 21.96vw;
+        margin-top: 1.64vw;
+        
+    }
+    .referal__item:nth-child(1){
+        top: 24.501vw;
+        left: -16.39vw;
+        align-items: flex-end;
+    }
+    .referal__item:nth-child(2){
+        top: 41vw;
+        left: 4.01vw;
+    }
+    .referal__item:nth-child(3){
+        top: 41vw;
+        right: 4.01vw;
+    }
+    .referal__item:nth-child(4){
+        top: 24.501vw;
+        right: -13.11rem;
+    }
+    .referal__item .referal__item-description{
+        max-width: 19.26vw;
+    }
+    
+    .referal__icon{
+        width: 12.3vw;
+        height: 12.3vw;
+    }
+    .referal__item-name{
+        font-size: 1.97vw;
+    }
+    .referal__item-description{
+        font-size: 1.475vw;
+    }
+    .referal__text{
+        margin-top: 19.175vw;   
+    }
+}
+
+@media(max-width: 768px){
+    .referal{
+        padding: 50px 0;
+    }
+    .referal__circle{
+        display: none;
+    }
+    .referal__items_m{
+        display: flex;
+    }
+    .referal__items_m .referal__item{
+        position: static;
+    }
+    .referal__items_m.referal__items{
+        position: static;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .referal__icon{
+        width: 150px;
+        height: 150px;
+    }
+    .referal__item .referal__item-description{
+        font-size: 18px;
+        max-width: 400px;
+        margin-top: 10px;
+    }
+    .referal__item .referal__item-name{
+        font-size: 24px;
+        max-width: 400px;
+        margin-top: 15px;
+    }
+    .referal__item:nth-child(1){
+        align-items: center;
+    }
+    .referal__text{
+        margin-top: 30px; 
+        padding: 0;  
+    }
+    .referal__button{
+        margin-top: 20px;
+        border-radius: 72.716px;
+        font-size: 16px;
+        gap: 16px
+    }
+}
+
+@media(max-width: 480px){
+    .referal__button{
+        margin-top: 20px;
+        border-radius: 4.04rem;
+        font-size: 0.8125rem;
+        gap: 0.88rem;
+        text-wrap: nowrap;
+    }
+    .referal{
+        padding: 60px 0;
+    }
+}

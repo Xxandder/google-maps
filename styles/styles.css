@@ -283,12 +283,12 @@ body.lock-scroll {
 }
 
 .header__menu-icon{
-    transform: rotate(0);
+    transform: rotate(180deg);
     transition: all 0.3s ease-out;
 }
 
 .header__menu-item:hover .header__menu-icon{
-    transform: rotate(180deg);
+    transform: rotate(0);
    
 }
 
@@ -323,19 +323,19 @@ body.lock-scroll {
 .submenu{
     position: relative;
     box-shadow: 0px 0px 15px rgba(87, 87, 86, 0.10);
-    padding: 10px 8px;
+    padding: 14px 10px;
    
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 8px;
     
     background-color: white;
  
 }
 
 .submenu__item{
-    font-size: 10px;
+    font-size: 13px;
     text-align: center;
     color: #737373;
    
@@ -1434,6 +1434,10 @@ body.lock-scroll {
     line-height: 1.275;
     text-align: center;
     
+}
+
+#formModal{
+    z-index: 10000;
 }
 
 #modal-additionalText{

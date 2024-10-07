@@ -5,21 +5,34 @@ const burgerMenu = document.querySelector('.burger__menu');
 const sideMenu = document.querySelector('.burger__side-menu');
 const overlay = document.querySelector('.burger__overlay');
 
-burgerMenu.addEventListener('click', () => {
+function openBurger(){
     burgerMenu.classList.toggle('active');
     sideMenu.classList.toggle('active');
     overlay.classList.toggle('active');
     document.body.style.overflow = document.body.style.overflow === 'hidden' ? 'auto' : 'hidden';
     isBurgerOpened = !isBurgerOpened;
     document.body.classList.toggle('lock-scroll');
-});
+}
 
-overlay.addEventListener('click', () => {
+function closeBurger(){
     burgerMenu.classList.remove('active');
     sideMenu.classList.remove('active');
     overlay.classList.remove('active');
     document.body.classList.remove('lock-scroll');
+}
+
+burgerMenu.addEventListener('click', () => {
+    openBurger()
 });
+
+overlay.addEventListener('click', () => {
+    closeBurger()
+});
+
+const burgerAppealButton = document.querySelector('.burger__button')
+burgerAppealButton.addEventListener('click', ()=>{
+    closeBurger()
+})
 
 
 /* MODAL WINDOW */
@@ -64,17 +77,21 @@ document.querySelectorAll('.open-form').forEach(el=>{
 })
 
 const serviceButtons = [
-    document.querySelector('.open-form-profile'),
-    document.querySelector('.open-form-optimization'),
-    document.querySelector('.open-form-promotion'),
-    document.querySelector('.open-form-audit')
+    document.querySelectorAll('.open-form-profile'),
+    document.querySelectorAll('.open-form-optimization'),
+    document.querySelectorAll('.open-form-promotion'),
+    document.querySelectorAll('.open-form-audit')
 ]
+console.log(serviceButtons)
 
-serviceButtons.forEach((button, index)=>{
-    if(button){
-        button.addEventListener('click', ()=>{
-            openFormModal(index);
+serviceButtons.forEach((buttons, index)=>{
+    if(buttons.length > 0){
+        buttons.forEach(button=>{
+            button.addEventListener('click', ()=>{
+                openFormModal(index);
+            })
         })
+        
     }
 })
 
